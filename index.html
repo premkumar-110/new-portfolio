@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images/Logo.svg" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="circle1">
+        <div class="circle2"></div>
+      </div>
+    </div>
+
+    <div class="visible" id="visible">
+      <!----------------------NAV BAR START--------------------------->
+      <div class="header">
+        <!----------------------DESKTOP NAV BAR--------------------------->
+        <div class="nav">
+          <!----------------------LOGO NAV BAR--------------------------->
+          <div class="logo">
+            <a href="/"
+              ><img
+                width="40px"
+                height="40px"
+                src="images/Logo.svg"
+                alt="logo"
+              />
+              PREMKUMAR</a
+            >
+          </div>
+          <!----------------------NAV BAR LINKS--------------------------->
+          <div class="nav-bar">
+            <ul>
+              <li><a href="/#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#project">PROJECTS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="#resume">RESUME</a></li>
+            </ul>
+          </div>
+          <!----------------------NAV BAR HAMBURGER ICONS--------------------------->
+          <div class="menu-bar" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+
+        <!----------------------MOBILE NAV BAR--------------------------->
+        <div class="nav-bar-mobile" id="menu_content">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#resume">RESUME</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!----------------------NAV BAR END--------------------------->
+
+      <!----------------------HOME SECTION START--------------------------->
+      <section class="home" id="home">
+        <div class="home-container">
+          <!---<img src="images/Profile-photo.svg" style="border-radius: 50%;align-self: center;" width="200px" height="200px">--->
+          <div class="small-intro font-color">Hello, my name is</div>
+          <!----------------------NAME ANIMATION--------------------------->
+          <div class="text">
+            <div class="wrapper">
+              <p>PREMKUMAR PALANISAMY</p>
+            </div>
+          </div>
+          <!----------------------HOME SECTION QUOTE--------------------------->
+          <div class="intro-quote">
+            Looking to work in an organization that can provide a variety of
+            opportunities that allow me to expand my skills and knowledge while
+            working towards achieving the organizational goals.
+          </div>
+          <div class="btn">
+            <a class="background-color" href="#about">Check my portfolio</a>
+          </div>
+        </div>
+        <img
+          class="dev-image"
+          src="images/web-developer.svg"
+          alt="Web-developer"
+        />
+
+        <!----------------------SOCIAL ICONS LINKS--------------------------->
+        <div class="social-icons">
+          <div class="line"></div>
+          <a href="https://www.facebook.com/prem kumar/" target="_blank"
+            ><img src="images/social-icons/Facebook - Negative.svg" alt=""
+          /></a>
+          <a href="https://github.com/premkumar-110" target="_blank"
+            ><img src="images/social-icons/Github - Negative.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/prem_kumar_110/" target="_blank"
+            ><img src="images/social-icons/Instagram - Negative.svg" alt=""
+          /></a>
+          <a href="https://twitter.com/PiratePrem2" target="_blank"
+            ><img src="images/social-icons/Twitter - Negative.svg " alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/premkumar-p-49478623b/"
+            target="_blank"
+            ><img src="images/social-icons/LinkedIn - Negative.svg" alt=""
+          /></a>
+        </div>
+      </section>
+      <!----------------------HOME SECTION END--------------------------->
+
+      <!----------------------ABOUT SECTION START--------------------------->
+
+      <section class="about reveal" id="about">
+        <div class="about-container">
+          <img src="images/web-developer about.svg" />
+          <div class="about-details">
+            <div class="about-title">ABOUT</div>
+            <div class="about-para">
+              I am basically interested to learn a lot of new technologies,
+              which contributes to the overall success of the finished product.
+              View a selection of my work under Projects.
+            </div>
+
+            <!----------------------SKILLS--------------------------->
+            <div class="Tech-skills background-color">Programming Skills</div>
+            <div class="skills">
+              <p>C</p>
+              <p>PYTHON</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JAVASCRIPT</p>
+              <p>ANGULAR</p>
+              <p>MONGO DB</p>
+              <p>UI/UX DESIGN</p>
+            </div>
+            <div class="Tech-skills background-color">Tools Familier</div>
+            <div class="skills">
+              <p>GITHUB</p>
+              <p>FIGMA</p>
+              <p>VSCODE</p>
+            </div>
+          </div>
+        </div>
+
+        <img class="img01 reveal" src="images/01.svg" />
+      </section>
+
+      <!----------------------ABOUT SECTION END--------------------------->
+
+      <!----------------------EQ SECTION START--------------------------->
+      <section class="educational-qualifiaction reveal">
+        <h2>EDUCATIONAL QUALIFICATION</h2>
+        <div class="eq-container">
+          <div class="timeline">
+            <div class="outer">
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">B. Tech - IT , 2020 - 2024</h3>
+                  <p>
+                    M. Kumarasamy College of Engineering, Karur<br />
+                    CGPA: 9.000
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">HSC , 2019 - 2020</h3>
+                  <p>
+                    Kongunadu Matric Higher Secondary School, Namakkal<br />
+                    Percentage : 86.5
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="info">
+                  <h3 class="title">SSLC , 2017 - 2018</h3>
+                  <p>
+                    Kongunadu Matric Higher Secondary School, Namakkal<br />
+                    Percentage : 92.6
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img src="images/EQ.svg" alt="educational-qualifiaction" />
+        </div>
+      </section>
+      <!----------------------EQ SECTION END--------------------------->
+
+      <!--------Project start-------------->
+      <section class="project reveal" id="project">
+        <img class="project02" src="images/02.svg" />
+        <span class="project-title">PROJECTS</span>
+
+        <!--------Project 1-------------->
+        <div class="project-container reveal">
+          <div class="project-details">
+            <span class="font-color" style="font-size: 1.5rem">PROJECT 1</span>
+            <div class="project-name">
+              SEMESTER RESULT PUBLICATION AND REVALUATION SYSTEM
+            </div>
+            <div class="project-desc">
+              Reduce the manual process of applying for photocopy of the exam
+              paper and applying for the revaluation.
+            </div>
+
+            <table>
+              <tr>
+                <td>HTML</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 70%">
+                      <small>70</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 70%">
+                      <small>70</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>JAVASCRIPT</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 80%">
+                      <small>80</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="div">
+              <a
+                href="https://github.com/premkumar-110/sem-result"
+                target="_blank"
+                class="project-view background-color"
+                >VIEW CODE<i class="fa fa-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <img src="images/Projects/Project 1.svg" />
+        </div>
+
+        <!--------Project 2-------------->
+        <div class="project-container reveal">
+          <img src="images/Projects/Project 2.svg" />
+          <div class="project-details">
+            <span class="font-color" style="font-size: 1.5rem">PROJECT 2</span>
+            <div class="project-name">SALES FORECASTING</div>
+            <div class="project-desc">
+              It is used to predict the future sales graph from the existing
+              sales data and display the graph using powerBI
+            </div>
+
+            <table>
+              <tr>
+                <td>HTML</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 60%">
+                      <small>60</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 60%">
+                      <small>60</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>ANGULAR</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 75%">
+                      <small>75</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>MONGODB</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 30%">
+                      <small>30</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="div">
+              <a
+                class="project-view background-color"
+                href="https://github.com/premkumar-110/sales-forecast.git"
+                target="_blank"
+                >VIEW CODE<i class="fa fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!--------Project 3-------------->
+        <div class="project-container reveal">
+          <div class="project-details">
+            <span class="font-color" style="font-size: 1.5rem">PROJECT 3</span>
+            <div class="project-name">PORTFOLIO</div>
+            <div class="project-desc">
+              Portfolio is a good way of growing your online presence. The
+              portfolio is used to showcase your skills and projects.
+            </div>
+
+            <table>
+              <tr>
+                <td>HTML</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 70%">
+                      <small>70</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 80%">
+                      <small>80</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>JAVASCRIPT</td>
+                <td>
+                  <div class="progress-bar" id="tech1" name="tech1">
+                    <div class="skill-precent" style="width: 60%">
+                      <small>60</small>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="div">
+              <a
+                href="https://github.com/premkumar-110/portfolio.git"
+                target="_blank"
+                class="project-view background-color"
+                >VIEW CODE<i class="fa fa-github"></i
+              ></a>
+              <a class="project-view background-color">YOU ARE HERE NOW</a>
+            </div>
+          </div>
+          <img src="images/Projects/Project 4.svg" />
+        </div>
+
+        <section class="uxdesign reveal">
+          <div class="ux-title">UI / UX DESIGN</div>
+          <div class="designs">
+            <div class="ui1">
+              <h3>LANDING PAGE</h3>
+              <img
+                src="images/UI/Landing Page.png"
+                height="300px"
+                width="500px"
+              />
+              <a
+                href="https://www.figma.com/proto/2qUQ0pkgzf3Vpv5xDSSnb8/Landing-Page-For-Watch-Hunt?node-id=1-7&starting-point-node-id=1%3A7"
+                target="_blank"
+                class="background-color"
+                >VIEW PROTOTYPE</a
+              >
+            </div>
+            <div class="ui1">
+              <h3>PORTFOLIO PAGE</h3>
+              <img src="images/UI/Portfolio.png" height="300px" width="500px" />
+              <a
+                href="https://www.figma.com/proto/l0oAkkSZFjpOr8t3wwReyD/PORTFOLIO?node-id=3-2&starting-point-node-id=3%3A2"
+                target="_blank"
+                class="background-color"
+                >VIEW PROTOTYPE</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+      <!--------Project end-------------->
+
+      <!-------------Contact start------------------->
+      <section class="contact reveal" id="contact">
+        <img class="contact03" src="/images/03.svg" />
+        <div class="contact-container">
+          <form
+            action="mailto:scpprem006@gmail.com"
+            method="post"
+            class="contact-form"
+          >
+            <span>
+              <label for="name">NAME</label>
+              <input
+                autocomplete="off"
+                type="text"
+                required
+                name="name"
+                id="name"
+            /></span>
+            <span>
+              <label for="email">EMAIL</label>
+              <input
+                autocomplete="off"
+                type="email"
+                id="email"
+                name="email"
+                required
+            /></span>
+            <span>
+              <label for="message">MESSAGE</label>
+              <input
+                autocomplete="off"
+                type="text"
+                name="message"
+                id="message"
+                required
+            /></span>
+            <!----<button type="submit" onclick="customAlert.alert('Thanks for reaching out to me !')" class="background-color">SUBMIT</button>---->
+            <button type="submit" id="submit" class="background-color">
+              SUBMIT
+            </button>
+          </form>
+          <div class="contact-description">
+            <div class="contact-title">REACH ME OUT</div>
+            <div class="contact-details">
+              Feel free to contact me and I will reach out to you as soon as
+              possible.
+            </div>
+            <div class="contact-stmt">
+              Although I am currently looking for the new oppertunities, my
+              inbox is always open. I’ll try to get back to you!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------Contact End------------------->
+
+      <!-------------Footer start------------------->
+
+      <div class="footer" *ngIf="!showloader">
+        <div class="copyright">
+          <div><u>Developed by Premkumar Palanisamy</u></div>
+          <div class="contact-details-icons">
+            <h2>SOCIAL SITE</h2>
+            <div class="icons">
+              <a
+                href="https://www.linkedin.com/in/premkumar-p-49478623b/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/premkumar-110" target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+              <a href="https://twitter.com/PiratePrem2" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a href="https://www.facebook.com/prem kumar/" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/prem_kumar_110/"
+                target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#home"
+        ><img class="uparrow" src="images/UP ARROW.svg" title="Scroll to top"
+      /></a>
+    </div>
+  </body>
+</html>
