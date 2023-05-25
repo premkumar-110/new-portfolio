@@ -239,7 +239,7 @@ a:active {
 .wrapper p {
   height: 40px;
   display: flex;
-  animation: typing-erase 8s steps(80) infinite,
+  animation: typing-erase 10s steps(80) infinite,
     blink-caret 0.5s step-end infinite;
 }
 
@@ -248,10 +248,19 @@ a:active {
   0% {
     width: 0;
   }
-  50%,
-  70% {
+  5%{
+    width: 0;
+  }
+  50%{
     width: 100%;
   }
+  70%{
+    width: 100%;
+  }
+  100%{
+    width: 0;
+  }
+  
 }
 
 /* The typewriter cursor effect */
@@ -489,6 +498,9 @@ a:active {
   justify-content: center;
   gap: 5%;
   color: white;
+  background-color: #0b0a0f;
+  padding: 2rem 1rem;
+  border-radius: 20px;
 }
 .project-container img {
   height: 300px;
