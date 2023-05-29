@@ -20,6 +20,11 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   
+</script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -148,8 +153,8 @@
               <p>HTML</p>
               <p>CSS</p>
               <p>JAVASCRIPT</p>
-              <p>ANGULAR</p>
-              <p>MONGO DB</p>
+              <p>REACT JS</p>
+              <p>MONGODB</p>
               <p>UI/UX DESIGN</p>
             </div>
             <div class="Tech-skills background-color">Tools Familier</div>
@@ -492,10 +497,10 @@
       <section class="contact reveal" id="contact">
         <img class="contact03" src="/images/03.svg" />
         <div class="contact-container">
-          <form
-            action="mailto:scpprem006@gmail.com"
-            method="post"
+          <span
             class="contact-form"
+            
+            
           >
             <span>
               <label for="name">NAME</label>
@@ -524,11 +529,11 @@
                 id="message"
                 required
             /></span>
-            <!----<button type="submit" onclick="customAlert.alert('Thanks for reaching out to me !')" class="background-color">SUBMIT</button>---->
-            <button type="submit" id="submit" class="background-color">
+            <button type="submit" class="background-color" onclick="sendEmail()">SUBMIT</button>
+            <!----<button type="submit" id="submit" class="background-color" onclick="sendEmail()">
               SUBMIT
-            </button>
-          </form>
+            </button>--->
+          </span>
           <div class="contact-description">
             <div class="contact-title">REACH ME OUT</div>
             <div class="contact-details">

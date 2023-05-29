@@ -26,6 +26,36 @@ function reveal() {
   }
 }
 
+(function(){
+  emailjs.init("-P_CVIJi1JBaWXeKh");
+  console.log("initiated")
+})();
+
+function sendEmail() { // Prevent the form from submitting normally
+  
+  var templateId = 'template_nwa4owo'; // Replace 'YOUR_TEMPLATE_ID' with your EmailJS template ID
+  
+  var userName=document.getElementById('name').value;
+  var userEmail=document.getElementById('email').value;
+  var userBody=document.getElementById('message').value;
+
+  var templateParams = {
+    from_name: "websitehostformysite@gmail.com",
+    from_email: "websitehostformysite@gmail.com",
+    to_name: 'scpprem006@gmail.com', // Replace with the recipient's name
+    subject: "This is the subject",
+    message: userName+" " + userEmail +" "+ userBody 
+  };
+  
+  emailjs.send('service_n2s6ukm', templateId, templateParams)
+    .then(function(response) {
+      console.log('Email sent successfully!', response.status, response.text);
+    }, function(error) {
+      console.log('Failed to send email. Error:', error);
+    });
+}
+
+
 function CustomAlert(){
   this.alert = function(message,title){
     document.body.innerHTML = document.body.innerHTML + '<div id="dialogoverlay"></div><div id="dialogbox" class="slit-in-vertical"><div><div id="dialogboxhead"></div><div id="dialogboxbody"></div><div id="dialogboxfoot"></div></div></div>';
@@ -57,5 +87,7 @@ function CustomAlert(){
     document.getElementById('dialogoverlay').style.display = "none";
   }
 }
-
 let customAlert = new CustomAlert();
+
+
+
