@@ -49,7 +49,7 @@ function sendEmail() { // Prevent the form from submitting normally
   
   emailjs.send('service_n2s6ukm', templateId, templateParams)
     .then(function(response) {
-      console.log('Email sent successfully!', response.status, response.text);
+      alert('Email sent successfully!', response.status, response.text);
     }, function(error) {
       console.log('Failed to send email. Error:', error);
     });
