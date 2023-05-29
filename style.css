@@ -852,7 +852,195 @@ table td {
   text-align:right; 
 }
 
+@media screen and (max-width: 1120px) {
+  
+  .home {
+    width: 100%;
+    gap: 2rem;
+  }
+  .home-container {
+    width: 40%;
+  }
+  .dev-image {
+    width: 40%;
+    margin-top: 3rem;
+  }
+  .home .line {
+    height: 40px;
+    width: 1px;
+  }
+  .home .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+  .text p {
+    font-size: 20px;
+  }
+  .img01{
+    width: 100px;
+  }
+  .about {
+    background-color: #191923;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0;
+  }
+  .about .img01 {
+    top: 3vh;
+  }
+  .about-container {
+    background-color: #0b0a0f;
+    opacity: 90%;
+    width: 80%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    z-index: 1;
+  }
+  .about-container img {
+    width: 70%;
+    height: 70%;
+  }
+  .about-details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  .about-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .educational-qualifiaction h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .eq-container {
+    padding: auto;
+    width: 90%;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .card {
+    width: 420px;
+  }
 
+  .eq-container img {
+    width: 200px;
+    padding-right: 5rem;
+  }
+
+  .project-container img {
+    width: 300px;
+  }
+  .progress-bar {
+    width: 12rem;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .project02 {
+    top: 8vh;
+    width: 100px;
+  }
+  .project {
+    gap: 2rem;
+  }
+  .project-view {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .skill-precent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    font-size: 15px;
+    background-color: #ed2a52;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .uxdesign {
+    height: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .uxdesign .designs {
+    gap: 3rem;
+  }
+  .designs .ui1 img {
+    width: 25rem;
+    height: 15rem;
+  }
+  .ux-title {
+    width: 100%;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .contact {
+    background-color: #191923;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    padding-top: 7rem;
+  }
+  .contact-container {
+    flex-direction: column-reverse;
+    width: 80%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-description {
+    width: 80%;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .contact-details {
+    font-size: 20px;
+  }
+  .contact03 {
+    width: 100px;
+    top: 3vh;
+    left: 5%;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #dialogbox{
+    display: none;
+    position: fixed;
+    border-radius:10px; 
+    transition: 0.3s;
+    width: 80%;
+    z-index: 10;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
 
 
 
