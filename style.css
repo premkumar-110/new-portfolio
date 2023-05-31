@@ -598,7 +598,26 @@ table td {
   padding: 0.7rem 2rem;
   cursor: pointer;
 }
-
+.uxdesign hr{
+  width: 100%;
+  color: lightgray;
+}
+.dribble a{
+  background-color: #ed2a52;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: .5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.dribble img{
+  width: 30px;
+  height: 30px;
+}
 .uparrow {
   position: fixed;
   z-index: 10;
