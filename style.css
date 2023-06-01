@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: 'Poppins';
 }
 
 body {
@@ -293,7 +294,7 @@ a:active {
   opacity: 90%;
   width: 80%;
   height: 80%;
-  border-radius: 5%;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,7 +358,7 @@ a:active {
   opacity: 90%;
   width: 80%;
   height: auto;
-  border-radius: 5%;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -613,6 +614,7 @@ table td {
   padding: .5rem;
   font-weight: bold;
   border-radius: 10px;
+  letter-spacing: 1px;
 }
 .dribble img{
   width: 30px;
@@ -1134,6 +1136,7 @@ table td {
     gap: 2rem;
     padding: 2rem 1rem;
     z-index: 1;
+    border-radius: 1rem;
   }
   .about-container img {
     width: 70%;
@@ -1160,6 +1163,7 @@ table td {
     width: 90%;
     padding: 0;
     margin-top: 2rem;
+    border-radius: 1rem;
   }
   .card {
     width: 220px;
@@ -1167,6 +1171,7 @@ table td {
 
   .eq-container img {
     width: 200px;
+    padding-top: 2rem;
   }
 
   .project-container {
