@@ -92,3 +92,29 @@ let customAlert = new CustomAlert();
 
 
 
+function showProject1(){
+  var project=document.getElementById('projectdemo');
+  var close=document.getElementById('video-close');
+  project.style.display='flex';
+  close.style.display='block';
+  console.log("Viewd");
+}
+function closeProject1(){
+  var project=document.getElementById('projectdemo');
+  var close=document.getElementById('video-close');
+  project.style.display='none';
+  close.style.display='none';
+}
+function showProject2(){
+  var project=document.getElementById('projectdemo1');
+  var close=document.getElementById('video-close1');
+  project.style.display='flex';
+  close.style.display='block';
+  console.log("Viewd");
+}
+function closeProject2(){
+  var project=document.getElementById('projectdemo1');
+  var close=document.getElementById('video-close1');
+  project.style.display='none';
+  close.style.display='none';
+}

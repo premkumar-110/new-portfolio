@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -102,7 +103,7 @@
             working towards achieving the organizational goals.
           </div>
           <div class="btn">
-            <a class="background-color" href="#about">Check my portfolio</a>
+            <a class="background-color" href="#about">Ready to Contribute</a>
           </div>
         </div>
         <img
@@ -274,7 +275,7 @@
                 class="project-view background-color"
                 >VIEW CODE<i class="fa fa-github"></i
               ></a>
-              <a class="project-view background-color" style="cursor: pointer;" onclick="customAlert.alert('Will be updated shortly!!!')">LIVE LINK <span class="material-symbols-outlined">
+              <a class="project-view background-color" style="cursor: pointer;" onclick="showProject1()">DEMO VIDEO<span class="material-symbols-outlined">
                 arrow_outward
                 </span></a>
             </div>
@@ -282,6 +283,9 @@
 
           <img src="images/Projects/Project 1.svg" />
         </div>
+
+
+
 
         <!--------Project 2-------------->
         <div class="project-container reveal">
@@ -343,13 +347,17 @@
                 target="_blank"
                 >VIEW CODE<i class="fa fa-github"></i
               ></a>
-              <a class="project-view background-color" style="cursor: pointer;" onclick="customAlert.alert('Will be updated shortly!!!')">LIVE LINK <span class="material-symbols-outlined">
+              <a class="project-view background-color" style="cursor: pointer;" onclick="showProject2()">DEMO VIDEO <span class="material-symbols-outlined">
                 arrow_outward
                 </span></a>
             </div>
           </div>
         </div>
 
+
+        <!---Project 2 Demo Video-->
+        
+        
 
         <!--------Project 3-------------->
         <div class="project-container reveal">
@@ -466,7 +474,7 @@
         </div>
 
         <section class="uxdesign reveal" id="ui/uxdesign">
-          <div class="ux-title">UI / UX DESIGN</div>
+          <div class="ux-title">UI / UX DESIGNS</div>
           <div class="designs">
             <div class="ui1">
               <h3>LANDING PAGE</h3>
@@ -483,10 +491,10 @@
               >
             </div>
             <div class="ui1">
-              <h3>PORTFOLIO PAGE</h3>
-              <img src="images/UI/Portfolio.png" height="300px" width="500px" />
+              <h3>SIGNUP AND LOGIN PAGE</h3>
+              <img src="images/UI/Sign Up.png" height="300px" width="500px" />
               <a
-                href="https://www.figma.com/proto/l0oAkkSZFjpOr8t3wwReyD/PORTFOLIO?node-id=3-2&starting-point-node-id=3%3A2"
+                href="https://www.figma.com/proto/pIfpNXPH14cSKAvnN8rhBw/Sign-Up-Page?type=design&node-id=1-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2"
                 target="_blank"
                 class="background-color"
                 >VIEW PROTOTYPE</a
@@ -527,13 +535,14 @@
             /></span>
             <span>
               <label for="message">MESSAGE</label>
-              <input
+              <textarea
                 autocomplete="off"
                 type="text"
                 name="message"
                 id="message"
                 required
-            /></span>
+            ></textarea>
+          </span>
             <button type="submit" class="background-color" onclick="sendEmail()">SUBMIT</button>
             <!----<button type="submit" id="submit" class="background-color" onclick="sendEmail()">
               SUBMIT
@@ -577,5 +586,31 @@
         ><img class="uparrow" src="images/UP ARROW.svg" title="Scroll to top"
       /></a>
     </div>
+
+
+    <div class="displayProject" id="projectdemo">
+        <video controlsList="nodownload" autoplay  controls id="videos1">
+          <source src="videos/Project 2.mp4">
+        </video>
+        <div class="video-close" onclick="closeProject1()" id="video-close">
+          <span class="material-symbols-outlined">
+            close
+            </span>
+        </div>
+    </div>
+    
+
+
+    <div class="displayProject" id="projectdemo1">
+        <video controlsList="nodownload" autoplay controls id="videos1">
+          <source src="videos/Project 1.mp4">
+        </video>
+        <div class="video-close" onclick="closeProject2()" id="video-close1">
+          <span class="material-symbols-outlined">
+            close
+            </span>
+        </div>
+    </div>
+    
   </body>
 </html>
