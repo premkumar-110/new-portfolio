@@ -5,7 +5,12 @@
   scroll-behavior: smooth;
   font-family: 'Poppins';
 }
-
+small{
+  font-size: 10px;
+}
+.intro-quote{
+  font-size: 18px;
+}
 body {
   width: 100%;
   height: auto;
@@ -194,6 +199,7 @@ a:active {
 }
 .home-container .btn {
   margin-top: 2rem;
+  font-size: 20px;
 }
 .home-container .btn a {
   text-decoration: none;
@@ -509,9 +515,9 @@ a:active {
 
 .progress-bar {
   width: 15rem;
-  height: 2%;
+  height: auto;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .skill-precent {
@@ -520,10 +526,9 @@ a:active {
   justify-content: center;
   width: 75%;
   height: 100%;
-  font-size: 15px;
   background-color: #ed2a52;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .project-details {
   display: flex;
