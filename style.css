@@ -48,43 +48,117 @@ body {
   display: none;
 }
 .loader {
-  height: 175px;
-  width: 175px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 10px solid #191923;
-  border-radius: 100%;
-  border-top: solid 10px rgb(255, 255, 255);
-  animation: spin 2s linear infinite;
 }
-.circle1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 10px solid #191923;
+#loading {
+  margin: 50px auto 0;
   width: 125px;
-  border-radius: 100%;
-  height: 125px;
-  border-top: solid 10px rgb(255, 255, 255);
-  animation: spin 2s linear infinite;
+  height: 118px;
 }
 
-.circle2 {
-  border: 10px solid #191923;
-  width: 75px;
-  border-radius: 50%;
-  height: 75px;
-  border-top: solid 10px rgb(255, 255, 255);
-  animation: spin 2s linear infinite;
+#loading p {
+  position: absolute;
+  z-index: 99;
+  padding: 34px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 22px;
+  padding-top: 3rem;
+  margin-right:3rem;
+}
+
+@keyframes dots {
+  0%  {width: 22px;}
+  50% {width: 30px;}
+  100% {width: 40px;}
+}
+@-webkit-keyframes dots {
+  0%  {width: 22px;}
+  50% {width: 30px;}
+  100% {width: 40px;}
+}
+@-moz-keyframes dots {
+  0%  {width: 22px;}
+  50% {width: 30px;}
+  100% {width: 40px;}
+}
+@-o-keyframes dots {
+  0%  {width: 22px;}
+  50% {width: 30px;}
+  100% {width: 40px;}
+}
+
+#loading div {
+  height: 100%;
+  margin: 10% auto;
+  border-right: 5px solid #D22020;
+  border-bottom: 5px solid transparent;
+  border-radius: 100%;
+  animation: spin 0.9s linear infinite;
+  -webkit-animation: spin 0.9s linear infinite;
+  -moz-animation: spin 0.9s linear infinite;
+  -o-animation: spin 0.9s linear infinite;
 }
 
 @keyframes spin {
-  0% {
+ 0% {
     transform: rotate(0deg);
+    border-right-color: #D22020;
   }
+  50% {
+    transform: rotate(180deg);
+    border-right-color: #D22020;
+  } 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
+    border-right-color: #D22020;
+  }
+}
+@-webkit-keyframes spin {
+ 0% {
+    -webkit-transform: rotate(0deg);
+    border-right-color: #D22020;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    border-right-color: #D22020;
+  } 
+  100% {
+    -webkit-transform: rotate(359deg);
+    border-right-color: #D22020;
+  }
+}
+@-moz-keyframes spin {
+ 0% {
+    -moz-transform: rotate(0deg);
+    border-right-color: #D22020;
+  }
+  50% {
+    -moz-transform: rotate(180deg);
+    border-right-color: #D22020;
+  } 
+  100% {
+    -moz-transform: rotate(359deg);
+    border-right-color: #D22020;
+  }
+}
+@-o-keyframes spin {
+ 0% {
+    -o-transform: rotate(0deg);
+    border-right-color: #D22020;
+  }
+  50% {
+    -o-transform: rotate(180deg);
+    border-right-color: #D22020;
+  } 
+  100% {
+    -o-transform: rotate(359deg);
+    border-right-color: #D22020;
   }
 }
 
@@ -934,7 +1008,12 @@ video{
 
 
 @media screen and (max-width: 1120px) {
-  
+  .intro-quote{
+    font-size: 14px;
+  }
+  .btn{
+    font-size: 14px;
+  }
   .home {
     width: 100%;
     gap: 2rem;
@@ -1133,6 +1212,12 @@ video{
 
 /*MOBILE VIEW*/
 @media screen and (max-width: 800px) {
+  .intro-quote{
+    font-size: 14px;
+  }
+  .btn a{
+    font-size: 14px;
+  }
   .menu-bar {
     display: block;
     cursor: pointer;
