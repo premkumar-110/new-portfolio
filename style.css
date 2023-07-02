@@ -806,6 +806,8 @@ table td {
 }
 .foot-details .icons {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .contact-details-icons i {
   color: white;
